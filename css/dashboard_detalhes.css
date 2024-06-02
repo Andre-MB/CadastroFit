@@ -1,0 +1,287 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(
+    180deg,
+    rgba(40, 75, 99, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  transition: background-color 0.3s;
+  color: #343a40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 30px;
+}
+
+.container:hover .content {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  /* min-width: 800px; */
+  padding: 20px;
+  background-color: #f5f5f5;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, color 0.3s;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navBar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.navBar a {
+  text-decoration: none;
+  color: #26485f;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  gap: 5px;
+}
+
+.navBar li {
+  list-style: none;
+  padding: 5px;
+  padding-left: 15px;
+}
+
+.cont_user {
+  background-color: #007bff;
+  display: flex;
+}
+.cont h4 {
+  margin-bottom: 10px;
+}
+
+/* .calc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+
+.container:hover h1 {
+  color: #2c3e50;
+}
+
+/* Efeito de hover suave */
+.smooth-hover:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Ícone no canto superior direito do conteúdo principal */
+.content-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #3498db;
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.content-icon:hover {
+  color: #2c3e50;
+}
+
+h1 {
+  text-align: center;
+  color: #3498db;
+  margin-bottom: 20px;
+  transition: color 0.3s;
+}
+
+/* Estilos para formulário */
+form {
+  margin-top: 20px;
+  text-align: center;
+}
+
+label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+/* Estilo do seletor de data */
+select {
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  color: #333;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Adicionando uma borda sutil quando hover */
+select:hover {
+  border: none;
+}
+
+/* Adicionando estilo quando o seletor está em foco */
+select:focus {
+  box-shadow: 0 0 5px rgba(20, 120, 200, 0.8); /* Sombra suave ao focar (tom mais claro do azul) */
+}
+
+/* Estilizando a seta do seletor */
+select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #555;
+}
+
+/* Estilo para a opção selecionada */
+select option[selected] {
+  background-color: #6fa4e5; /* Azul claro para a opção selecionada */
+  color: #fff; /* Cor do texto para a opção selecionada */
+}
+
+/* Estilo geral para as opções */
+select option {
+  background-color: #fff; /* Cor de fundo padrão para as opções */
+  color: #333; /* Cor do texto padrão para as opções */
+  padding: 10px;
+  border: 1px solid #ccc; /* Borda fina para separar as opções */
+  border-radius: 5px; /* Borda arredondada */
+  margin: 5px; /* Espaçamento entre as opções */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para efeito tridimensional */
+  transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+}
+
+/* Estilo do botão */
+input[type="submit"] {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Efeito hover no botão */
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para tabelas */
+.student-table {
+  width: 100%;
+  margin: 10px;
+  border-collapse: collapse;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.student-info {
+  text-align: left;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.student-info {
+  background-color: #f5f5f5;
+}
+
+th,
+td {
+  border: 1px solid #26485f;
+  padding: 15px;
+  text-align: left;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+th {
+  background-color: #e43232;
+  color: #fff;
+}
+
+/* Estilo para centralizar o texto na tabela */
+.texto-centralizado {
+  text-align: center;
+  color: #4285f4;
+}
+
+/* Estilos para telas menores (responsivo) */
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .student-table {
+    font-size: 14px;
+    margin-left: 20px;
+  }
+}
+
+/* Estilos para telas menores (responsivo) */
+@media screen and (max-width: 600px) {
+  form {
+    text-align: center; /* Centralizar o formulário */
+    margin-bottom: 20px; /* Adicione uma margem inferior para melhor espaçamento */
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  select {
+    width: 35%; /* Defina a largura desejada para o seletor */
+    margin-bottom: 10px; /* Adicione um espaçamento na parte inferior para melhorar a legibilidade */
+    margin-left: 10px; /* Adicione uma margem esquerda */
+    margin: 0 auto;
+  }
+
+  input[type="submit"] {
+    width: auto; /* Deixe o botão ocupar a largura natural do conteúdo */
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* Adicione uma margem esquerda */
+    display: block;
+    margin: 0 auto; /* Centralize o botão */
+  }
+}

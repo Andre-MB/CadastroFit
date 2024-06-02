@@ -1,0 +1,87 @@
+/* Estilos para o modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 60px;
+}
+
+/* Estilos para o conteúdo do modal */
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-out; /* Adiciona uma animação de fade in */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Estilos para a mensagem de sucesso */
+.success-message {
+    font-size: 24px;
+    color: #4CAF50;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Estilos para o botão de fechar (oculto) */
+.close {
+    display: none;
+    color: #666;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.close:before {
+    content: "\00D7"; /* Código Unicode para o caractere 'X' */
+}
+
+
+/* Estilos para o fundo escuro */
+.dark-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    display: none;
+}
+
+/* Adiciona uma animação de fade in */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media only screen and (max-width: 600px) {
+    /* Reduza as margens para dispositivos menores */
+    .modal-content {
+        margin: 10% auto;
+        padding: 15px;
+    }
+
+    .success-message {
+        font-size: 20px;
+    }
+
+    .close {
+        top: 10px;
+        right: 10px;
+    }
+}
