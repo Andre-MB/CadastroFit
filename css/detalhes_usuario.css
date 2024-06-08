@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s;
+    color: #343a40;
+    display: flex;
+    min-height: 100vh;
+}
+
+.container {
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f5f5f5; /* Alterei a cor de fundo */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, color 0.3s;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/* Estilo do Rodapé */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background: linear-gradient(to bottom, #3498db, #2980b9);
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar img {
+    max-width: 90%;
+    margin-bottom: 30px;
+    border-radius: 12px;
+}
+
+.sidebar:hover {
+    width: 300px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #3498db;
+}
+
+.sidebar a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+    z-index: -1;
+}
+
+.sidebar a:hover:before {
+    transform: translateX(100%);
+}
+
+.sidebar i {
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.sidebar a:hover i {
+    transform: scale(1.2);
+}
+
+.container:hover .content {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.container:hover h1 {
+    color: #2c3e50;
+}
+
+/* Adicione algum estilo extra conforme necessário */
+
+/* Efeito de hover suave */
+.smooth-hover:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Ícone no canto superior direito do conteúdo principal */
+.content-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #3498db;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.content-icon:hover {
+    color: #2c3e50;
+}
+
+
+h1 {
+    text-align: center;
+    color: #3498db;
+    margin-bottom: 20px;
+    transition: color 0.3s;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.container:hover .content {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+
+table {
+    width: 80%;
+    margin: 60px auto;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+}
+th {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+
+/* Aplica o efeito hover apenas nos cabeçalhos (th) */
+
+tr:hover td {
+    background-color: #dcdcdc;
+}
+
+/* Responsive design for screens smaller than 768px */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #495057;
+        border-radius: 0;
+    }
+
+    .content {
+        padding: 1px;
+    }
+
+    table tr.clicked {
+        background-color: #dcdcdc;
+    }
+
+    table tr.clicked td {
+        background-color: #e9ecef;
+    }
+
+    table {
+        width: auto;
+    }
+
+    table th,
+    table td {
+        padding: 10px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    table th {
+        background-color: #007bff;
+    }
+
+    table tr {
+        border-bottom: 1px solid #ddd;
+    }
+
+    table tr:last-child {
+        border-bottom: none;
+    }
+
+    /* Adiciona espaço extra para a última linha da tabela */
+    table tr:last-child td {
+        padding-bottom: 10px;
+    }
+}
+
+
+

@@ -1,0 +1,225 @@
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(40, 75, 99, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+  font-family: Arial, sans-serif; /* Defina uma fonte padrão */
+  min-height: 100vh;
+  /* Define uma altura mínima para o body */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main a {
+  font-size: 0.8em;
+  color: #0d1d27;
+}
+
+#loginErrorMessage {
+  font-size: 0.8em;
+}
+
+.cont_main {
+  background-color: #eaf4f4;
+  border-radius: 20px;
+  height: 571px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#sobre img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #17a2b8;
+}
+
+footer {
+  /* Garante que o footer ocupe toda a largura disponível */
+  text-align: center; /* Centraliza o conteúdo do footer */
+  padding: 10px; /* Adiciona um preenchimento interno de 10 pixels */
+  background-color: #343a40; /* Define a cor de fundo do footer */
+  color: #fff;
+  clear: both; /* Define a cor do texto do footer */
+}
+
+section {
+  padding: 60px 0;
+}
+
+.icon-bg {
+  background-color: #17a2b8;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.icon-bg i {
+  font-size: 40px;
+  color: #fff;
+}
+
+.card {
+  /* margin-top: -80px; */
+  background-color: transparent; /* Cor transparente */
+  /* border-radius: 10px; */
+}
+
+.card-title {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#togglePassword:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#password::-ms-reveal {
+  display: none;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+#carouselExample {
+  width: 700px; /* Ajuste a largura conforme necessário */
+  /* float: left; */
+  /* margin-left: 150px; */
+  /* margin-bottom: 10px;  */
+  overflow: hidden;
+  height: auto;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.cont_main input {
+  background-color: transparent;
+  border-color: #2c363d;
+  border-radius: 0;
+  border-width: 0pc 0pc 1px 0px;
+  margin: 8px 0;
+  padding: 10px 15px;
+  font-size: 13px;
+  width: 100%;
+}
+
+.cont_main input:focus {
+  background-color: transparent;
+}
+
+button {
+  background-color: #274960;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 45px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0d1d27;
+}
+
+button.hidden {
+  background-color: transparent;
+  border-color: #fff;
+}
+
+.footer {
+  font-size: 0.7em;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+}
+
+.logo_estacio {
+  font-size: 0.7em;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #fff;
+}
+
+/* Estilos gerais para telas pequenas */
+@media (max-width: 767px) {
+  body {
+    padding-top: 56px; /* Adapte conforme necessário para a altura da barra de navegação móvel */
+  }
+
+  /* Estilos específicos para o formulário de login */
+  .card {
+    margin-top: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .eye-icon {
+    top: 12px; /* Posição ajustada para o ícone de olho */
+    right: 10px;
+  }
+
+  /* Adapte conforme necessário para as redes sociais no rodapé */
+  .social-icons {
+    text-align: center;
+  }
+
+  .social-icons a {
+    margin: 0 10px;
+  }
+}
+
+/* Ajustes adicionais conforme necessário para outras resoluções */
+@media (max-width: 576px) {
+  .navbar-brand img {
+    max-width: 90%; /* Reduz ainda mais a largura da logo em telas muito pequenas */
+  }
+}
+
+.error-message {
+  color: red;
+}
+
+/* styles.css */
+#loginErrorMessage.alert-sm {
+  padding: 5px;
+}

@@ -1,0 +1,113 @@
+/* Adicione essas regras ao seu arquivo relatorio.css */
+.pdf-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    margin: 20px;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.section {
+    margin-top: 30px;
+}
+
+h1 {
+    color: #007bff;
+    text-align: center;
+}
+
+h2 {
+    color: #28a745;
+    font-size: 2em;
+    margin-top: 20px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #dee2e6;
+    padding: 12px;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+strong {
+    font-weight: bold;
+    color: #dc3545;
+}
+
+/* Estilos para o botão de voltar */
+nav {
+    background-color: #343a40;
+    padding: 15px;
+    text-align: center;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c82333;
+}
+
+.with-margin strong {
+    margin-right: 5px;
+}
+
+.graph-container {
+    display: flex;
+    margin-top: 100px;
+}
+
+/* Estilizações específicas para dispositivos móveis */
+@media only screen and (max-width: 400px) {
+    /* Ajusta o tamanho da fonte para dispositivos menores */
+    body {
+        font-size: 14px;
+    }
+
+    /* Ajusta o espaçamento dos elementos */
+    .pdf-container {
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 1.2rem;
+    }
+
+    td {
+        padding: 6px;
+    }
+
+    button {
+        padding: auto;
+        font-size: 0.9rem;
+    }
+    
+    .with-margin strong {
+        display: auto;
+        margin-right: 5px; /* Adiciona margem à direita para separar os elementos */
+    }
+
+}
